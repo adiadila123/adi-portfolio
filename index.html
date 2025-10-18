@@ -372,7 +372,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>hello@adi.dev</p>
+                            <p>adi.ionescu.dev@gmail.com</p>
                         </div>
                     </div>
                     
@@ -398,27 +398,32 @@
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display:none;">
+                            <label>Don’t fill this out: <input name="bot-field"></label>
+                        </p>
+
                         <div class="form-group">
                             <label for="name" class="form-label">Your Name</label>
                             <input name="name" type="text" id="name" class="form-control" placeholder="Enter your name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email" class="form-label">Email Address</label>
                             <input name="email" type="email" id="email" class="form-control" placeholder="Enter your email" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject" class="form-label">Subject</label>
                             <input name="subject" type="text" id="subject" class="form-control" placeholder="What is this about?">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message" class="form-label">Message</label>
                             <textarea name="message" id="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary btn-large">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
@@ -434,7 +439,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <a href="#" class="footer-logo">
+                    <a href="#top" class="footer-logo">
                         <i class="fas fa-code"></i>
                         <span>Adi.dev</span>
                     </a>
@@ -443,17 +448,11 @@
                         Focused on performance, accessibility, and user-centered design.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="https://github.com/adiadila123" class="social-link" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="https://www.linkedin.com/in/adrian-ionescu-96322269/" class="social-link" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-codepen"></i>
                         </a>
                     </div>
                 </div>
@@ -472,9 +471,8 @@
                 <div class="footer-social">
                     <h4>Connect</h4>
                     <ul>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://github.com/adiadila123" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/adrian-ionescu-96322269/" target="_blank">LinkedIn</a></li>
                         <li><a href="#">CodePen</a></li>
                     </ul>
                 </div>
