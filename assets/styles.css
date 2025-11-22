@@ -96,7 +96,7 @@ section { padding: 5rem 0; }
     cursor: pointer; border: none; font-size: 1rem;
 }
 .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; box-shadow: var(--shadow); }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.btn-primary:hover { background: transparent; transform: translateY(-2px); box-shadow: var(--shadow-lg); border: 2px solid var(--primary); }
 
 /* Secondary button meets AA both states (checked 5.17:1) */
 .btn-secondary { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
@@ -330,12 +330,6 @@ footer { background: #0f172a; color: var(--light); padding: 3rem 0 1.5rem; }
     border-color: var(--primary) !important;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
 }
-
-
-/* === Project image: Fintech card === */
-
-
-
 
 /* === Unified project image rules === */
 .project-image {
